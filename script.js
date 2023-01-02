@@ -16,7 +16,6 @@ function calculate() {
   )
     .then((res) => res.json())
     .then((data) => {
-      //   console.log(data);
       const rate = data.conversion_rates[currency_2];
 
       rateEl.innerText = `1 ${currency_1} = ${rate} ${currency_2}`;
